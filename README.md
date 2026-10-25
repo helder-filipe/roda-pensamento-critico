@@ -1,15 +1,20 @@
 # A Roda do Pensamento Crítico
 
-Site interativo, em português de Portugal, com oito dimensões, 24 perguntas e cinco histórias ficcionadas fixas por pergunta.
+Site estático e responsivo, em português de Portugal, baseado nas 24 perguntas da imagem fornecida.
 
-## Ficheiros do site
+## Iniciar
 
-- `index.html`: estrutura da página
-- `styles.css`: estilos e modo escuro
-- `app.js`: roda interativa, histórias, pesquisa, exercícios e progresso
+Abra `index.html` num navegador, ou sirva esta pasta com `python3 -m http.server 8000` e visite `http://localhost:8000`.
 
-Site estático sem necessidade de compilação. O progresso e as notas são guardados localmente no navegador.
+Pode publicar a pasta diretamente na Vercel, Netlify ou GitHub Pages. Não necessita de compilação nem de chaves de API. A fonte tipográfica tenta carregar Google Fonts; se estiver offline, são usadas fontes locais alternativas.
 
-## Publicação
+## Organização
+- `index.html`: estrutura semântica, secções e janela de histórias.
+- `styles.css`: estilo editorial, adaptação a ecrãs móveis, modo escuro e acessibilidade.
+- `app.js`: 8 dimensões, 24 perguntas, 120 histórias determinísticas (cinco universos narrativos recorrentes × 24 perguntas), exercícios, filtros e progresso.
 
-Preparado para alojamento estático na Vercel. A publicação requer os três ficheiros do site na raiz do repositório.
+## Persistência e privacidade
+O progresso e as reflexões são guardados apenas no `localStorage` do navegador. Não há registo, contas nem transferência destes conteúdos para servidores. A opção «Repor progresso» apaga estes dados locais. As histórias são ficcionadas, estáveis e geradas a partir de textos fixos do código; não utilizam IA nem sorteio. O botão «Surpreender-me» só sorteia uma pergunta, nunca a respetiva história.
+
+## Nota pedagógica
+As situações são exemplos ilustrativos, não estudos científicos nem aconselhamento médico, jurídico ou profissional. Em futuras versões, pode ser acrescentada revisão editorial individual das 120 histórias, referências bibliográficas, avaliações e exportação de progresso.
