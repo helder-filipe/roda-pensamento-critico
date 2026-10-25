@@ -1,0 +1,22 @@
+{
+  "name": "A Roda do Pensamento Crítico",
+  "short_name": "Roda Crítica",
+  "lang": "pt-PT",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f7f3",
+  "theme_color": "#0b7769",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
